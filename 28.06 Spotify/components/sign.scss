@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+.form {
+    width: 100vw;
+    height: auto;
+    background-color: #f7f7f7;
+
+    .box {
+        width: 33%;
+        height: auto;
+        background-color: #f7f7f7;
+        margin: 0 auto;
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 139px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #000;
+            font-weight: 900;
+            margin: 20px 0;
+            
+        }
+
+            button {
+            width: 233px;
+            height: 48px;
+            border: none;
+            border-radius: 30px;
+            background-color: #1877f2;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            outline: none;
+            transition: 0.2s all ease;
+            
+
+            &:hover {
+                transform: scale(1.05);
+                background-color: #3989f1;
+            }
+        }
+
+        .box__text {
+            margin-top: 10px;
+            p {
+                font-size: 12px;
+                margin-top: 10px;
+
+                a {
+                    color: #1db954;
+                }
+            }
+        }
+
+        
+            
+
+            .line {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-top: 20px;
+
+                p {
+                    font-size: 18px;
+                }
+
+                .first {
+                    width: 38%;
+                    height: 1px;
+                    background-color: #969191;
+                }
+            }
+            
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        .card {
+            p{
+                font-size: 14px;
+                margin: 20px 0 5px 0;
+            }
+
+            input {
+                width: 450px;
+                height: 52px;
+                border-radius: 3px;
+                border: 0.5px solid #969191;
+                outline: none;
+                text-indent: 10px;
+                background-color: #f7f7f7;
+
+                &:focus {
+                    border: 2px solid #000;
+                }
+            }
+        }
+
+        .birthday {
+            width: 100%;
+
+            h2 {
+                font-size: 14px;
+            }
+
+            .birthday__wrapp {
+                display: flex;
+                justify-content: space-between;
+
+                .birth {
+                    p {
+                        font-size: 14px;
+                    }
+                    select {
+                        width: 202px;
+                        height: 52px;
+                        text-indent: 10px;
+                        background-color: #f7f7f7;
+                        border: 0.5px solid #969191;
+                        border-radius: 3px;
+                        
+
+                    }
+                }
+
+                .day {
+                    p {
+                        font-size: 14px;
+                    }
+
+                    input {
+                        width: 90px;
+                        height: 52px;
+                        text-indent: 10px;
+                        background-color: #f7f7f7;
+                        border: 0.5px solid #969191;
+                        border-radius: 3px;
+                    }
+                }
+
+                .year {
+                    p {
+                        font-size: 14px;
+                    }
+
+                    input {
+                        width: 112px;
+                        height: 52px;
+                        text-indent: 10px;
+                        background-color: #f7f7f7;
+                        border: 0.5px solid #969191;
+                        border-radius: 3px;
+                    }
+                }
+            }
+
+        }
+
+        .gender {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+            h2 {
+                font-size: 14px;
+                
+            }
+
+            .radio {
+                display: flex;
+                
+
+                p{
+                    font-size: 17px;
+                    margin-right: 20px;
+                    
+
+                    input {
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 6px;
+                        
+                        
+                    }
+                }
+                
+            }
+        }
+
+        .check {
+            
+            font-size: 14px;
+            margin-top: 20px;
+
+            input {
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+            }
+        }
+
+        .captcha {
+            width: 100%;
+            margin-top: 20px;
+
+            .captcha__box {
+                width: 304px;
+                height: 82px;
+                border: 0.5px solid #969191;
+                padding: 15px 10px;
+                text-align: right;
+                border-radius: 3px;
+
+                .box__wrapp {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    
+                    p {
+                        font-size: 18px;
+                        color: #555353;
+                        display: flex;
+                        align-items: center;
+
+                        input {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 5px;
+                            border-radius: 3px;
+                        }
+                    }
+
+                    img {
+                        width: 70px;
+                    }
+                }
+                h3 {
+                    font-size: 10px;
+                    margin-top: 5px;
+                    color: #555353;
+                    
+                }
+            }
+            
+        }
+
+        .last {
+            width: 100%;
+            
+            text-align: center;
+            margin-top: 20px;
+
+            p {
+                font-size: 14px;
+                margin-top: 10px;
+                
+
+                a {
+                    color: #1db954;
+                    
+                }
+            }
+
+            button {
+                margin-top: 20px;
+                width: 151px;
+                height: 56px;
+                background-color: #1ed760;
+                color: #000;
+                font-size: 18px;
+                transition: 0.2s all ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                    background-color: #3ceb79;
+                }
+            }
+
+            h2 {
+                font-size: 18px;
+                a {
+                    color: #1db954;
+                    
+                }
+            }
+        }
+    }
+}

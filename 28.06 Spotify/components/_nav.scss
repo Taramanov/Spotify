@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+%foot{
+    width: 195px;
+    height: 346px;
+    
+}
+
+$maxWidth: 1280;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+nav {
+    height: 80px;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+    .main__logo {
+        width: 140px;
+    }
+
+    ul {
+        display: flex;
+        position: relative;
+
+        :nth-child(3)::after{
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 18px;
+            background-color: #fff;
+            left: 64%;
+            transform: translateX(64%);
+            
+        }
+
+        li{
+            font-size: 16px;
+            margin: 0 15px;
+            @include adaptiv-font(16, 12);
+
+            
+            a{
+                color: #fff;
+                font-weight: 700;
+
+                &:hover {
+                    color: #1ED760;
+                }
+            }
+        }
+    }
+
+    .burger {
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+        a{
+            color: #fff;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    
+        nav {
+            ul{
+                display: none;
+            }
+
+            .burger {
+                display: block;
+            }
+        }
+    
+
+        
+}
